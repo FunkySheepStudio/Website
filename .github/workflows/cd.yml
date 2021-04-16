@@ -32,4 +32,4 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: FunkySheepStudio/FunkySheepStudio.github.io
           publish_branch: master  # default: gh-pages
-          publish_dir: ./
+          publish_dir: ./dist
