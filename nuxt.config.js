@@ -9,8 +9,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - FunkySheepStudio.github.io',
-    title: 'FunkySheepStudio.github.io',
+    titleTemplate: '%s',
+    title: 'Funky Sheep Studio',
     htmlAttrs: {
       lang: 'en'
     },
