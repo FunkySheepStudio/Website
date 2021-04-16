@@ -17,6 +17,8 @@
         fab
         small
         color="primary"
+        href="https://github.com/FunkySheepStudio/"
+        target="_blank"
       >
         <v-icon dark>
           mdi-github
@@ -85,6 +87,14 @@ export default {
             {
               title: 'Description',
               to: '/framework'
+            },
+            {
+              title: 'Examples',
+              to: '/examples'
+            },
+            {
+              title: 'Documentation',
+              to: '/documentation'
             }
           ]
         }
