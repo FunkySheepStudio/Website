@@ -90,11 +90,11 @@ export default {
             },
             {
               title: 'Examples',
-              to: '/examples'
+              to: '/framework/examples'
             },
             {
               title: 'Documentation',
-              to: '/documentation'
+              to: '/framework/documentation'
             }
           ]
         }
