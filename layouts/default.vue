@@ -1,7 +1,6 @@
 <template>
   <v-app dark>
     <v-app-bar
-      :clipped-left="clipped"
       fixed
       app
     >
@@ -60,18 +59,14 @@
       @mouseout="showMobileMenu = false"
     >
       <v-list>
-        <v-list-item @click.native="right = !right">
-          <v-list-item-action>
-            <v-icon light>
-              mdi-repeat
-            </v-icon>
-          </v-list-item-action>
-          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
-        </v-list-item>
+        <MenuItemMobile
+          v-for="(menu, i) in menus"
+          :key="i"
+          :menu="menu"
+        />
       </v-list>
     </v-navigation-drawer>
     <v-footer
-      :absolute="!fixed"
       app
     >
       <span>&copy; {{ new Date().getFullYear() }}</span>
@@ -81,9 +76,11 @@
 
 <script>
 import MenuItem from '~/components/MenuItem.vue'
+import MenuItemMobile from '~/components/MenuItemMobile.vue'
 export default {
   components: {
-    MenuItem
+    MenuItem,
+    MenuItemMobile
   },
   data () {
     return {
