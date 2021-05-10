@@ -5,23 +5,45 @@
       fixed
       app
     >
-      <LogoHead />
+      <funkysheep-logo
+        src="/img/Logo-Head-Mini.png"
+      />
       <v-toolbar-title v-text="title" />
       <v-spacer />
       <MenuItem
         v-for="(menu, i) in menus"
         :key="i"
         :menu="menu"
+        :hidden="$vuetify.breakpoint.mobile"
+      />
+      <v-divider
+        class="mx-4"
+        vertical
+        :hidden="$vuetify.breakpoint.mobile"
       />
       <v-btn
         fab
-        small
+        elevation="0"
+        x-small
         color="primary"
         href="https://github.com/FunkySheepStudio/"
         target="_blank"
+        :hidden="$vuetify.breakpoint.mobile"
       >
         <v-icon dark>
           mdi-github
+        </v-icon>
+      </v-btn>
+      <v-btn
+        :hidden="!$vuetify.breakpoint.mobile"
+        fab
+        elevation="0"
+        x-small
+        color="primary"
+        @click="mobileMenu = !mobileMenu"
+      >
+        <v-icon dark>
+          mdi-menu
         </v-icon>
       </v-btn>
     </v-app-bar>
@@ -31,10 +53,11 @@
       </v-container>
     </v-main>
     <v-navigation-drawer
-      v-model="rightDrawer"
+      v-model="mobileMenu"
       :right="right"
       temporary
       fixed
+      @mouseout="showMobileMenu = false"
     >
       <v-list>
         <v-list-item @click.native="right = !right">
@@ -57,18 +80,13 @@
 </template>
 
 <script>
-import LogoHead from '~/components/LogoHead.vue'
 import MenuItem from '~/components/MenuItem.vue'
 export default {
   components: {
-    MenuItem,
-    LogoHead
+    MenuItem
   },
   data () {
     return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
       menus: [
         {
           icon: 'mdi-apps',
@@ -77,6 +95,10 @@ export default {
             {
               title: 'About Us',
               to: '/'
+            },
+            {
+              title: 'News',
+              to: '/news'
             }
           ]
         },
@@ -86,7 +108,7 @@ export default {
           items: [
             {
               title: 'Description',
-              to: '/framework'
+              to: '/framework/description'
             },
             {
               title: 'Examples',
@@ -101,9 +123,10 @@ export default {
       ],
       miniVariant: false,
       right: true,
-      rightDrawer: false,
+      mobileMenu: false,
       title: 'Funky Sheep Studio'
     }
-  }
+  },
+  computed: {}
 }
 </script>
