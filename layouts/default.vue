@@ -20,19 +20,7 @@
         vertical
         :hidden="$vuetify.breakpoint.mobile"
       />
-      <v-btn
-        fab
-        elevation="0"
-        x-small
-        color="primary"
-        href="https://github.com/FunkySheepStudio/"
-        target="_blank"
-        :hidden="$vuetify.breakpoint.mobile"
-      >
-        <v-icon dark>
-          mdi-github
-        </v-icon>
-      </v-btn>
+      <funkysheep-social />
       <v-btn
         :hidden="!$vuetify.breakpoint.mobile"
         fab
