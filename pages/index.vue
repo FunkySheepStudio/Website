@@ -16,25 +16,19 @@
           align="center"
           justify="center"
         >
-          <div>
-            <v-sheet
-              color="rgb(0, 0, 0, 0.7)"
-              tile
-              class="display-1"
-              align="center"
-              justify="center"
+          <v-card
+            shaped
+            color="rgb(0, 0, 0, 0.6)"
+          >
+            <v-card-title
+              class="text-h4"
             >
               {{ item.title }}
-            </v-sheet>
-            <v-sheet
-              color="rgb(0, 0, 0, 0.3)"
-              tile
-              align="center"
-              justify="center"
-            >
+            </v-card-title>
+            <v-card-text>
               {{ item.text }}
-            </v-sheet>
-          </div>
+            </v-card-text>
+          </v-card>
         </v-row>
       </v-carousel-item>
     </v-carousel>
@@ -76,16 +70,16 @@ export default {
     return {
       carousselItems: [
         {
-          title: 'Framework Alpha is Out!',
-          text: 'We are pleased to annouce the first public version of our framework',
+          title: 'Framework is Out!',
+          text: 'We are pleased to announce the first public version of our framework. It\'s time for us to release this tool to the community. Go check the documentation and examples to be able to download, use and contribute!',
           btnText: 'Discover',
           href: '/framework/description',
           src: 'https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?cs=srgb&dl=pexels-markus-spiske-2004161.jpg&fm=jpg'
         },
         {
-          title: 'Get in touch',
+          title: 'Stay in touch',
           text: 'Stay in touch with the team, github, discord etc...',
-          href: 'Contact us',
+          href: '/studio/contact',
           src: 'https://images.pexels.com/photos/3184424/pexels-photo-3184424.jpeg?cs=srgb&dl=pexels-fauxels-3184424.jpg&fm=jpg'
         }
       ],

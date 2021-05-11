@@ -12,7 +12,7 @@
       <template #activator="{ on, attrs }">
         <v-btn
           color="secondary"
-          rounded="pill"
+          rounded
           v-bind="attrs"
           v-on="on"
         >
