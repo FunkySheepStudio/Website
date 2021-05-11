@@ -88,8 +88,12 @@ export default {
           title: 'Studio',
           items: [
             {
-              title: 'About Us',
-              to: '/'
+              title: 'Philosophy',
+              to: '/studio/philosophy'
+            },
+            {
+              title: 'Services',
+              to: '/studio/services'
             },
             {
               title: 'News',

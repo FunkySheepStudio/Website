@@ -7,10 +7,12 @@
     <v-menu
       offset-y
       transition="slide-y-transition"
+      rounded="lg"
     >
       <template #activator="{ on, attrs }">
         <v-btn
           color="secondary"
+          rounded="pill"
           v-bind="attrs"
           v-on="on"
         >
