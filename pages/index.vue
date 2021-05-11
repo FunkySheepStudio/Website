@@ -3,7 +3,7 @@
     <v-carousel
       cycle
       interval="5000"
-      width="100%"
+      :show-arrows="!$vuetify.breakpoint.mobile"
     >
       <v-carousel-item
         v-for="(item,i) in carousselItems"
@@ -11,36 +11,31 @@
         :src="item.src"
         :href="item.href"
       >
-        <v-sheet
-          color="rgb(0, 0, 0, 0.3)"
-          height="100%"
+        <v-row
+          class="fill-height"
+          align="center"
+          justify="center"
         >
-          <v-row
-            class="fill-height"
-            align="center"
-            justify="center"
-          >
-            <div>
-              <v-sheet
-                color="rgb(0, 0, 0, 0.7)"
-                tile
-                height="60"
-                align="center"
-                class="display-2"
-              >
-                {{ item.title }}
-              </v-sheet>
-              <v-sheet
-                color="rgb(0, 0, 0, 0.3)"
-                min-height="200"
-                tile
-                align="center"
-              >
-                {{ item.text }}
-              </v-sheet>
-            </div>
-          </v-row>
-        </v-sheet>
+          <div>
+            <v-sheet
+              color="rgb(0, 0, 0, 0.7)"
+              tile
+              class="display-1"
+              align="center"
+              justify="center"
+            >
+              {{ item.title }}
+            </v-sheet>
+            <v-sheet
+              color="rgb(0, 0, 0, 0.3)"
+              tile
+              align="center"
+              justify="center"
+            >
+              {{ item.text }}
+            </v-sheet>
+          </div>
+        </v-row>
       </v-carousel-item>
     </v-carousel>
   </section>
@@ -55,7 +50,7 @@ export default {
           title: 'Framework Alpha is Out!',
           text: 'We are pleased to annouce the first public version of our framework',
           btnText: 'Discover',
-          href: 'http://localhost:3000/framework/description',
+          href: '/framework/description',
           src: 'https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?cs=srgb&dl=pexels-markus-spiske-2004161.jpg&fm=jpg'
         },
         {
