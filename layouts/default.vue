@@ -67,7 +67,7 @@
     <v-footer
       app
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <span>Funky Sheep Studio &copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
 </template>
