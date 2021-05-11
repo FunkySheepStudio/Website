@@ -20,7 +20,9 @@
         vertical
         :hidden="$vuetify.breakpoint.mobile"
       />
-      <funkysheep-social />
+      <funkysheep-social
+        :hidden="$vuetify.breakpoint.mobile"
+      />
       <v-btn
         :hidden="!$vuetify.breakpoint.mobile"
         fab
@@ -50,6 +52,9 @@
           :key="i"
           :menu="menu"
         />
+        <v-list-item>
+          <funkysheep-social />
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
     <v-footer
