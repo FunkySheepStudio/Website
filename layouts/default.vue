@@ -20,21 +20,6 @@
         vertical
         :hidden="$vuetify.breakpoint.mobile"
       />
-      <v-btn
-        rounded
-        color="#f7931a"
-        to="/studio/donate"
-        router
-      >
-        <v-icon>
-          mdi-bitcoin
-        </v-icon>
-      </v-btn>
-      <v-divider
-        class="mx-4"
-        vertical
-        :hidden="$vuetify.breakpoint.mobile"
-      />
       <funkysheep-social
         :hidden="$vuetify.breakpoint.mobile"
       />
