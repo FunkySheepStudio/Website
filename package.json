@@ -12,7 +12,11 @@
     "test": "jest"
   },
   "dependencies": {
+    "@feathersjs/socketio": "^4.5.11",
+    "@feathersjs/socketio-client": "^4.5.11",
+    "@vue/composition-api": "^1.0.0-rc.8",
     "core-js": "^3.9.1",
+    "feathers-vuex": "^3.16.0",
     "funkysheep-ui": "git+https://github.com/FunkySheepStudio/funkysheep-ui.git",
     "nuxt": "^2.15.3"
   },
