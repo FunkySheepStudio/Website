@@ -69,6 +69,11 @@
         align-center
       >
         Funky Sheep Studio &copy; {{ new Date().getFullYear() }}
+        <v-divider
+          class="mx-2"
+          vertical
+          :hidden="$vuetify.breakpoint.mobile"
+        />
         <funkysheep-social />
       </v-layout>
     </v-footer>
