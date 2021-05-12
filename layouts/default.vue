@@ -61,9 +61,13 @@
       </v-list>
     </v-navigation-drawer>
     <v-footer
-      app
+      color="primary"
     >
-      <span>Funky Sheep Studio &copy; {{ new Date().getFullYear() }}</span>
+      <v-layout
+        justify-center
+      >
+        Funky Sheep Studio &copy; {{ new Date().getFullYear() }}
+      </v-layout>
     </v-footer>
   </v-app>
 </template>
