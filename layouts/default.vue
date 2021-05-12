@@ -7,7 +7,10 @@
       <funkysheep-logo
         src="/img/Logo-Head-Mini.png"
       />
-      <v-toolbar-title v-text="title" />
+      <v-toolbar-title
+        v-if="$vuetify.breakpoint.name != 'xs'"
+        v-text="title"
+      />
       <v-spacer />
       <MenuItem
         v-for="(menu, i) in menus"
