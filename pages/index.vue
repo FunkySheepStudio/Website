@@ -3,6 +3,7 @@
     <v-carousel
       cycle
       interval="5000"
+      :height="$vuetify.breakpoint.height / 2"
       :show-arrows="!$vuetify.breakpoint.mobile"
     >
       <v-carousel-item
