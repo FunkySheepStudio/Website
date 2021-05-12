@@ -62,11 +62,14 @@
     </v-navigation-drawer>
     <v-footer
       color="primary"
+      height="auto"
     >
       <v-layout
         justify-center
+        align-center
       >
         Funky Sheep Studio &copy; {{ new Date().getFullYear() }}
+        <funkysheep-social />
       </v-layout>
     </v-footer>
   </v-app>
