@@ -12,7 +12,7 @@
         v-text="title"
       />
       <v-spacer />
-      <MenuItem
+      <funkysheep-menu-item
         v-for="(menu, i) in menus"
         :key="i"
         :menu="menu"
@@ -26,31 +26,35 @@
       <funkysheep-social
         :hidden="$vuetify.breakpoint.mobile"
       />
-      <v-btn
+      <div
         :hidden="!$vuetify.breakpoint.mobile"
-        fab
-        elevation="0"
-        x-small
-        color="primary"
-        @click="mobileMenu = !mobileMenu"
       >
-        <v-icon dark>
-          mdi-menu
-        </v-icon>
-      </v-btn>
+        <v-btn
+          fab
+          elevation="0"
+          x-small
+          color="primary"
+          @click="mobileMenu = !mobileMenu"
+        >
+          <v-icon dark>
+            mdi-menu
+          </v-icon>
+        </v-btn>
+      </div>
     </v-app-bar>
     <v-main>
       <nuxt />
     </v-main>
     <v-navigation-drawer
       v-model="mobileMenu"
-      :right="right"
+      right="true"
       temporary
       fixed
+      :hidden="!$vuetify.breakpoint.mobile"
       @mouseout="showMobileMenu = false"
     >
       <v-list>
-        <MenuItemMobile
+        <funkysheep-menu-mobile-item
           v-for="(menu, i) in menus"
           :key="i"
           :menu="menu"
@@ -86,13 +90,8 @@
 </template>
 
 <script>
-import MenuItem from '~/components/MenuItem.vue'
-import MenuItemMobile from '~/components/MenuItemMobile.vue'
 export default {
-  components: {
-    MenuItem,
-    MenuItemMobile
-  },
+  components: {},
   data () {
     return {
       menus: [
