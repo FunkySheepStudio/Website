@@ -18,6 +18,7 @@
     "core-js": "^3.9.1",
     "feathers-vuex": "^3.16.0",
     "funkysheep-ui": "git+https://github.com/FunkySheepStudio/funkysheep-ui.git",
+    "idb": "^6.1.0",
     "nuxt": "^2.15.3"
   },
   "devDependencies": {

@@ -122,12 +122,22 @@ export default {
               to: '/framework/description'
             },
             {
-              title: 'Examples',
-              to: '/framework/examples'
-            },
-            {
               title: 'Documentation',
               to: '/framework/documentation'
+            }
+          ]
+        },
+        {
+          icon: 'mdi-gamepad',
+          title: 'Examples',
+          items: [
+            {
+              title: 'Color Picker',
+              to: '/games/colorpicker'
+            },
+            {
+              title: 'Movements',
+              to: '/games/movements'
             }
           ]
         }
