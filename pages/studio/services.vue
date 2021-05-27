@@ -52,7 +52,7 @@ export default {
           title_en: 'Integration',
           title_fr: 'Integration',
           icon: 'mdi-graph',
-          en: 'We support you in the integration and implementation of your work procedures thanks to DevOps techniques allowing a scaling up of your systems in real time. We go as far as the operation of your solutions, their maintenance and their upgrades as needed.',
+          en: 'We support you in the integration and implementation of your work procedures thanks to DevOps techniques allowing a scaling up of your systems in real time. We can operate your solutions, maintenance and upgrades as needed.',
           fr: 'Nous vous accompagnons dans l\'integration et la mise en place de vos procédures de travail grace aux techniques DevOps permettant une montée en charge de vos systèmes en temps réél. Nous allons jusqu\'a l\'exploitation de vos solutions, leurs maintenance et leurs évolutions au besoin.',
           image: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?cs=srgb&dl=pexels-luis-gomes-546819.jpg&fm=jpg'
         },
@@ -60,7 +60,7 @@ export default {
           title_en: 'Training',
           title_fr: 'Formation',
           icon: 'mdi-school',
-          en: 'We can train your teams so that you are master of all the solutions that we put in place that you are completely autonomous on your entire system.',
+          en: 'We train your team to be autonomous on the solutions we implement.',
           fr: 'Nous pouvons former vos équipes pour que vous soyez maître de toutes les solutions que nous mettons en place que que vous soyez completement autonome sur l\'ensemble de votre système.',
           image: 'https://images.pexels.com/photos/716276/pexels-photo-716276.jpeg?cs=srgb&dl=pexels-%E7%A5%9D-%E9%B9%A4%E6%A7%90-716276.jpg&fm=jpg'
         }

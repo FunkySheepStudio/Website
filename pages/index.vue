@@ -94,7 +94,7 @@ export default {
           title_en: 'The studio',
           title_fr: 'Le studio',
           icon: 'mdi-account-multiple',
-          en: 'FunkySheep Studio is a company whose goal is to help companies implement graphics solutions for their customers. For each project we surround ourselves with specialists to best meet your needs.',
+          en: 'Our goal is to help companies implement graphics solutions for their customers. For each project we surround ourselves with specialists to best meet your needs.',
           fr: 'FunkySheep Studio est une société dont le but est de d\'aider les entreprises à implémenter des solutions graphiques à destination de leurs clients. Pour chaque projet nous nous entourons de spécialistes pour satisfaire au mieux vos besoins.',
           image: 'https://images.pexels.com/photos/792051/pexels-photo-792051.jpeg?cs=srgb&dl=pexels-othmar-vigl-792051.jpg&fm=jpg'
         },
@@ -102,7 +102,7 @@ export default {
           title_en: 'The framework',
           title_fr: 'Le framework',
           icon: 'mdi-axis-arrow-info',
-          en: 'Built on NuxtJs, our open source framework allows everyone to integrate a powerful tool into their Unity 3D pipeline. It manages network messages, database integration and frontend quickly and efficiently.',
+          en: 'Built on NuxtJs, our open source framework allows everyone to integrate a powerful tool into their Unity 3D pipeline. It quickly and efficiently manages network messages, database integration and frontend.',
           fr: 'Construit sur NuxtJs, notre framework open source permet à chacun d\'intégrer un outil puissant à son pipeline Unity 3D. Il gère les messages réseaux, l\'intégration à la base de donnée et le frontend rapidement et efficacement.',
           image: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?cs=srgb&dl=pexels-luis-gomes-546819.jpg&fm=jpg'
         },
@@ -110,7 +110,7 @@ export default {
           title_en: 'Our services',
           title_fr: 'Nos services',
           icon: 'mdi-cart',
-          en: 'Our time is yours. Our entire team is available to meet the challenges of your projects. We can help you integrate and use our framework, teach your teams how to use it or even create your games or content in real time. Our only limit is your imagination...',
+          en: 'Our time is yours. Our team is available to meet the challenges of your projects. We can help you integrate and use our framework, teach your teams how to use it or create your games or content in real time. Our only limit is your imagination...',
           fr: 'Notre temps est le votre. Toute notre équipe est disponible pour relever les challenge de vos projets. Nous pouvons vous aider à intégrer et utiliser notre framework, apprendre à vos équipes la prise en main de ce dernier ou même créer vos jeux ou contenus en temps réél. Notre seul limite est votre imagination...',
           image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?cs=srgb&dl=pexels-fauxels-3184465.jpg&fm=jpg'
         }
