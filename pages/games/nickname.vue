@@ -2,30 +2,31 @@
   <v-container
     class="d-md-flex justify-center"
   >
-    Hello {{ nickname }}
     <v-card>
       <v-card-title>Set your nickname</v-card-title>
       <v-text-field
         v-model="nickname"
         :rules="[rules.min, rules.max]"
         :error-messages="errorMessages"
-        label="Nickname"
+        outlined
+        background-color="#D6A3A3"
       />
-    </v-card>
-    <v-card>
-      <v-card-title>See the changes</v-card-title>
-      <funkysheep-unity
-        v-if="userId !== ''"
-        game="users"
-      />
-    </v-card>
-    <v-card>
-      <v-card-title>Network messages</v-card-title>
       <v-data-table
-        :items="messages({ query: { direction: 'outgoing' } }).data.filter(record => record.data._id === userId)"
-        :headers="headersOutgoing"
+        :items="messages(
+          { query: {
+            direction: 'incoming',
+            $limit: 5,
+            $sort: {
+              sentAt: -1
+            }
+          }
+          }
+        ).data.filter(record => record.data._id === userId)"
+        :headers="headersIncoming"
         :sort-by="['sentAt']"
         :sort-desc="[true]"
+        items-per-page="5"
+        hide-default-footer
       >
         <template #[`item.sentAt`]="{ item }">
           {{ new Date(item.sentAt).toLocaleString() }}
@@ -39,6 +40,13 @@
           </v-chip>
         </template>
       </v-data-table>
+    </v-card>
+    <v-card>
+      <v-card-title>See the changes</v-card-title>
+      <funkysheep-unity
+        v-if="userId !== ''"
+        game="nickname"
+      />
     </v-card>
   </v-container>
 </template>
@@ -95,8 +103,20 @@ export default {
           value: 'sentAt'
         },
         {
-          text: 'Color',
-          value: 'data.color'
+          text: 'Nickname',
+          value: 'data.nickname'
+        }
+      ]
+    },
+    headersIncoming () {
+      return [
+        {
+          text: 'Send Date',
+          value: 'sentAt'
+        },
+        {
+          text: 'Nickname',
+          value: 'data.nickname'
         }
       ]
     }
