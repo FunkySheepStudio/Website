@@ -1,7 +1,7 @@
 import feathersClient, {
   makeServicePlugin,
   BaseModel
-} from '../apis/local'
+} from '../apis'
 
 const serviceName = '/api/text'
 

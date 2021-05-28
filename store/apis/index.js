@@ -5,6 +5,7 @@ import feathersVuex from 'feathers-vuex'
 
 // Setup the Feathers client
 const socket = io('wss://admin.funkysheep.net:8080/', { transports: ['websocket'] })
+
 const feathersClient = feathers()
   .configure(socketio(socket))
 
