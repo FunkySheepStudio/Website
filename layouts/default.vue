@@ -108,8 +108,8 @@ export default {
               to: '/studio/services'
             },
             {
-              title: 'News',
-              to: '/news'
+              title: 'Contact',
+              to: '/studio/contact'
             }
           ]
         },
@@ -131,6 +131,10 @@ export default {
           icon: 'mdi-gamepad',
           title: 'Examples',
           items: [
+            {
+              title: 'Nickname',
+              to: '/games/nickname'
+            },
             {
               title: 'Color Picker',
               to: '/games/colorpicker'
