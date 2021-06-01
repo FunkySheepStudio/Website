@@ -21,7 +21,7 @@
             }
           }
           }
-        ).data.filter(record => record.data._id === userId)"
+        ).data"
         :headers="headersIncoming"
         :sort-by="['sentAt']"
         :sort-desc="[true]"
@@ -29,14 +29,6 @@
       >
         <template #[`item.sentAt`]="{ item }">
           {{ new Date(item.sentAt).toLocaleString() }}
-        </template>
-        <template #[`item.data.color`]="{ item }">
-          <v-chip
-            :color="item.data.color"
-            dark
-          >
-            {{ item.data.color }}
-          </v-chip>
         </template>
       </v-data-table>
     </v-card>
@@ -94,18 +86,6 @@ export default {
         this.patch([this.userId, { _id: this.userId, nickname: value }])
         this.errorMessages = ''
       }
-    },
-    headersOutgoing () {
-      return [
-        {
-          text: 'Send Date',
-          value: 'sentAt'
-        },
-        {
-          text: 'Nickname',
-          value: 'data.nickname'
-        }
-      ]
     },
     headersIncoming () {
       return [
