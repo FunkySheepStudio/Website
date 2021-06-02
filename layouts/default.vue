@@ -122,8 +122,8 @@ export default {
               to: '/framework/description'
             },
             {
-              title: 'Documentation',
-              to: '/framework/documentation'
+              title: 'First steps',
+              to: '/framework/firststeps'
             }
           ]
         },
