@@ -49,7 +49,9 @@
                 shaped
                 elevation="5"
               >
-                <v-card-title>
+                <v-card-title
+                  class="text-subtitle-2"
+                >
                   NodeJS
                 </v-card-title>
                 <v-card-text>
@@ -67,7 +69,9 @@
                 shaped
                 elevation="5"
               >
-                <v-card-title>
+                <v-card-title
+                  class="text-subtitle-2"
+                >
                   Git
                 </v-card-title>
                 <v-card-text>
@@ -85,7 +89,9 @@
                 shaped
                 elevation="5"
               >
-                <v-card-title>
+                <v-card-title
+                  class="text-subtitle-2"
+                >
                   Unity 3D
                 </v-card-title>
                 <v-card-text>
@@ -120,7 +126,9 @@
                 shaped
                 elevation="5"
               >
-                <v-card-title>
+                <v-card-title
+                  class="text-subtitle-2"
+                >
                   Download the sources
                 </v-card-title>
                 <v-card-text>
@@ -141,7 +149,9 @@
                 shaped
                 elevation="5"
               >
-                <v-card-title>
+                <v-card-title
+                  class="text-subtitle-2"
+                >
                   Enter the "Server" directory
                 </v-card-title>
                 <v-card-text>
@@ -162,7 +172,9 @@
                 shaped
                 elevation="5"
               >
-                <v-card-title>
+                <v-card-title
+                  class="text-subtitle-2"
+                >
                   Install the dependencies
                 </v-card-title>
                 <v-card-text>
@@ -183,7 +195,9 @@
                 shaped
                 elevation="5"
               >
-                <v-card-title>
+                <v-card-title
+                  class="text-subtitle-2"
+                >
                   Launch the developpement server
                 </v-card-title>
                 <v-card-text>
@@ -204,7 +218,9 @@
                 shaped
                 elevation="5"
               >
-                <v-card-title>
+                <v-card-title
+                  class="text-subtitle-2"
+                >
                   Open the server webpage
                 </v-card-title>
                 <v-card-text>
@@ -244,7 +260,9 @@
                 shaped
                 elevation="5"
               >
-                <v-card-title>
+                <v-card-title
+                  class="text-subtitle-2"
+                >
                   Download the sources
                 </v-card-title>
                 <v-card-text>
@@ -265,7 +283,9 @@
                 shaped
                 elevation="5"
               >
-                <v-card-title>
+                <v-card-title
+                  class="text-subtitle-2"
+                >
                   Add the directory in Unity Hub
                 </v-card-title>
                 <v-img
@@ -281,7 +301,9 @@
                 shaped
                 elevation="5"
               >
-                <v-card-title>
+                <v-card-title
+                  class="text-subtitle-2"
+                >
                   Open the client
                 </v-card-title>
                 <v-card-text>
@@ -319,7 +341,9 @@
                 shaped
                 elevation="5"
               >
-                <v-card-title>
+                <v-card-title
+                  class="text-subtitle-2"
+                >
                   Get the browser user ID
                 </v-card-title>
                 <v-card-text>
@@ -343,7 +367,9 @@
                 shaped
                 elevation="5"
               >
-                <v-card-title>
+                <v-card-title
+                  class="text-subtitle-2"
+                >
                   Set the user ID in the client
                 </v-card-title>
                 <v-card-text>
@@ -365,7 +391,9 @@
                 shaped
                 elevation="5"
               >
-                <v-card-title>
+                <v-card-title
+                  class="text-subtitle-2"
+                >
                   Run the examples
                 </v-card-title>
                 <v-card-text>
