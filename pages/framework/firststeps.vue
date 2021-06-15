@@ -198,7 +198,7 @@
                 <v-card-title
                   class="text-subtitle-2"
                 >
-                  Launch the developpement server
+                  Launch the dev server
                 </v-card-title>
                 <v-card-text>
                   Run this command in a terminal
@@ -286,7 +286,7 @@
                 <v-card-title
                   class="text-subtitle-2"
                 >
-                  Add the directory in Unity Hub
+                  Add in Unity Hub
                 </v-card-title>
                 <v-img
                   max-width="1000"
