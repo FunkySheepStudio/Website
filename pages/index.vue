@@ -23,7 +23,7 @@
             color="rgb(0, 0, 0, 0.6)"
           >
             <v-card-title
-              class="text-h4"
+              class="text-h6 text-lg-h3"
             >
               {{ item.title_en }}
             </v-card-title>
