@@ -84,6 +84,17 @@
         <funkysheep-social
           :hidden="$vuetify.breakpoint.mobile"
         />
+        <v-divider
+          class="mx-2"
+          vertical
+        />
+        <a
+          style="color:#000000;"
+          href="https://github.com/FunkySheepStudio/Website"
+          target="_blank"
+        >
+        Fix me
+        </a>
       </v-layout>
     </v-footer>
   </v-app>
