@@ -72,6 +72,15 @@ export default {
     return {
       carousselItems: [
         {
+          title_en: 'Everse: the game',
+          title_fr: 'Everse: le jeu',
+          en: 'We are proud to present you our next game: Everse. A Metaverse game based on real world. The first devlog will show you the streaming process of the worl inside Unity. Stay tuned!',
+          fr: 'Nous sommes fiers de vous présenter notre prochin jeu: Everse. Un metaverse basé sur le monde réél. la vidéo du premier devlog vous montrera le peocessus de streaming du monde.',
+          btnText: 'Everse',
+          href: '/everse/description',
+          src: '/img/everse/earth.png'
+        },
+        {
           title_en: 'Our framework is available!',
           title_fr: 'Notre framework est disponible!',
           en: 'We are delighted to announce the release of the alpha version of our framework. The community now has free access to a Unity-based framework to accelerate the network development of network projects. Do not hesitate to visit our examples page to discover the possibilities of the framework. All sources are available on our github page.',

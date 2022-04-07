@@ -140,19 +140,15 @@ export default {
         },
         {
           icon: 'mdi-gamepad',
-          title: 'Examples',
+          title: 'Everse',
           items: [
             {
-              title: 'Nickname',
-              to: '/games/nickname'
+              title: 'The Game',
+              to: '/everse/description'
             },
             {
-              title: 'Color Picker',
-              to: '/games/colorpicker'
-            },
-            {
-              title: 'Movements',
-              to: '/games/movements'
+              title: 'Devlog',
+              to: '/everse/devlog'
             }
           ]
         }
