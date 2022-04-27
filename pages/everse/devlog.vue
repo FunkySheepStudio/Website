@@ -27,8 +27,8 @@
           </v-card-text>
           <iframe
             style="position: absolute; width: 100%; border: none"
-            src="https://www.youtube.com/embed/Jo8g9yXakUU"
-            title="Unity Earth Streaming Tech Demo"
+            :src="item.video"
+            :title="item.title_en"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
@@ -50,7 +50,17 @@ export default {
           icon: 'mdi-numeric-1-box',
           en: 'For the first devlog, we demonstrate the earth streaming tech. Bonus: you can see green items locating the POI.',
           fr: 'Pour notre premier devlog, nous vous présentons la démo du stream de la planête. En bonus: vous pouvez appercevoir les icones des centres d\'intérêt.',
-          image: '/img/everse/earth.png'
+          image: '/img/everse/earth.png',
+          video: 'https://www.youtube.com/embed/Jo8g9yXakUU'
+        },
+        {
+          title_en: 'Devlog #2',
+          title_fr: 'Devlog #2',
+          icon: 'mdi-road',
+          en: 'For the second devlog, we added road integration. Real road datas are in the game. Speeding the player.',
+          fr: 'Pour second, nous avons intégré les routes. La vitesse du joueur est augmentée..',
+          image: '/img/everse/earth.png',
+          video: 'https://www.youtube.com/embed/FP3SIayiy1o'
         }
       ]
     }
