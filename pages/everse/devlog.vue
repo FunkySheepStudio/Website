@@ -24,15 +24,17 @@
           </v-card-title>
           <v-card-text>
             {{ item.en }}
+            <br>
+            <br>
+             <iframe
+              style="height:350px; width: 100%; border: none"
+              :src="item.video"
+              :title="item.title_en"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
           </v-card-text>
-          <iframe
-            style="position: absolute; width: 100%; border: none"
-            :src="item.video"
-            :title="item.title_en"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
         </v-card>
       </v-timeline-item>
     </v-timeline>
@@ -61,6 +63,24 @@ export default {
           fr: 'Pour second, nous avons intégré les routes. La vitesse du joueur est augmentée..',
           image: '/img/everse/earth.png',
           video: 'https://www.youtube.com/embed/FP3SIayiy1o'
+        },
+        {
+          title_en: 'Devlog #3',
+          title_fr: 'Devlog #3',
+          icon: 'mdi-server',
+          en: 'This devlog is dedicated to the backend. Based on Nodejs, NuxtJS and FeathersJS, realtime communication with Unity3D using websockets.',
+          fr: 'Ce devlog est dédié au backend. Basé sur NodeJs, les communications en temps réél avec Unity3D utilisent les websockets.',
+          image: '/img/everse/earth.png',
+          video: 'https://www.youtube.com/embed/vBuI6tPqmmg'
+        },
+        {
+          title_en: 'Devlog #4',
+          title_fr: 'Devlog #4',
+          icon: 'mdi-white-balance-sunny',
+          en: 'Today we integrated day and night transition using a procedral skybox created with Shader Graph.',
+          fr: 'Aujourd\'hui nous avons intégré les transition de jour et nuit. Utilisant une skybox procédural basée sur Shader Graph.',
+          image: '/img/everse/earth.png',
+          video: 'https://www.youtube.com/embed/Ahd_hLtg4lc'
         }
       ]
     }
